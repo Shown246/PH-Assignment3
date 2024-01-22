@@ -2,7 +2,15 @@
 module.exports = {
   content: ["./**/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'primaryRed': '#FF4240',
+        'themBlack': '#131318',
+        'paraGray' : '#13131899',
+        'navGray' : '#424247',
+        'divGray' : 'rgba(255, 255, 255, 0.60)'
+      }
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {

@@ -8,7 +8,8 @@
     @apply lg:container w-[91%] mx-auto;
   }
   .red-btn-style {
-    @apply border-2 border-primaryRed bg-primaryRed text-white hover:bg-white hover:text-primaryRed hover:border-primaryRed lg:text-xl text-base font-bold;
+    @apply border-2 border-primaryRed bg-primaryRed text-white hover:bg-white
+     hover:text-primaryRed hover:border-primaryRed lg:text-xl text-base font-bold;
   }
 }
 @tailwind utilities;
@@ -27,7 +28,7 @@
         rgba(19, 19, 24, 0.4) 90%,
         rgba(19, 19, 24, 0.4) 90%
       ),
-      url("/images/2.png");
+      url('../images/2.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -38,7 +39,7 @@
         rgba(19, 19, 24, 0.4) 90%,
         rgba(19, 19, 24, 0.4) 90%
       ),
-      url("/images/3.png");
+      url('../images/3.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -49,7 +50,7 @@
         rgba(19, 19, 24, 0.4) 90%,
         rgba(19, 19, 24, 0.4) 90%
       ),
-      url("/images/4.png");
+      url('../images/4.png');
     background-repeat: no-repeat;
     background-size: cover;
   }

@@ -1158,6 +1158,19 @@ html{
   padding-bottom: 0.5rem;
 }
 
+.hero{
+  display: grid;
+  width: 100%;
+  place-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero > *{
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
 .input{
   flex-shrink: 1;
   -webkit-appearance: none;
@@ -2311,6 +2324,10 @@ details.collapse summary::-webkit-details-marker{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
+
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -2557,23 +2574,23 @@ details.collapse summary::-webkit-details-marker{
   line-height: 1.625;
 }
 
-.text-amber-500{
+.text-\[\#49D293\]{
   --tw-text-opacity: 1;
-  color: rgb(245 158 11 / var(--tw-text-opacity));
+  color: rgb(73 210 147 / var(--tw-text-opacity));
 }
 
-.text-blue-500{
+.text-\[\#4C8DF1\]{
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+  color: rgb(76 141 241 / var(--tw-text-opacity));
+}
+
+.text-\[\#FFB546\]{
+  --tw-text-opacity: 1;
+  color: rgb(255 181 70 / var(--tw-text-opacity));
 }
 
 .text-divGray{
   color: rgba(255, 255, 255, 0.60);
-}
-
-.text-green-400{
-  --tw-text-opacity: 1;
-  color: rgb(74 222 128 / var(--tw-text-opacity));
 }
 
 .text-navGray{
@@ -2631,7 +2648,7 @@ details.collapse summary::-webkit-details-marker{
         rgba(19, 19, 24, 0.4) 90%,
         rgba(19, 19, 24, 0.4) 90%
       ),
-      url("/images/2.png");
+      url('../images/2.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2643,7 +2660,7 @@ details.collapse summary::-webkit-details-marker{
         rgba(19, 19, 24, 0.4) 90%,
         rgba(19, 19, 24, 0.4) 90%
       ),
-      url("/images/3.png");
+      url('../images/3.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2655,7 +2672,7 @@ details.collapse summary::-webkit-details-marker{
         rgba(19, 19, 24, 0.4) 90%,
         rgba(19, 19, 24, 0.4) 90%
       ),
-      url("/images/4.png");
+      url('../images/4.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2831,12 +2848,12 @@ details.collapse summary::-webkit-details-marker{
     justify-content: flex-start;
   }
 
-  .lg\:gap-4{
-    gap: 1rem;
+  .lg\:gap-20{
+    gap: 5rem;
   }
 
-  .lg\:gap-40{
-    gap: 10rem;
+  .lg\:gap-4{
+    gap: 1rem;
   }
 
   .lg\:gap-7{
